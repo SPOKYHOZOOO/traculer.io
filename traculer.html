@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Location Tracker</h1>
+        <form id="locationForm">
+            <label for="lat">Latitude:</label>
+            <input type="text" id="lat" name="lat" required>
+            <label for="lng">Longitude:</label>
+            <input type="text" id="lng" name="lng" required>
+            <button type="submit">Update Location</button>
+        </form>
+        <div id="map"></div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Include Google Maps or Leaflet JS library here -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</body>
+</html>
